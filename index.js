@@ -7,15 +7,13 @@ console.log(lastElement); */
 
 /* что это ?? */
 
-
-const asd = ["apple", "peach", "pear", "banana"];
-const lastElementIndex = asd.length -1;
+const asd = ['apple', 'peach', 'pear', 'banana'];
+const lastElementIndex = asd.length - 1;
 const lastElement = asd[lastElementIndex];
 // Change code below this line
 
 /* console.log(lastElement);
- */// Change code below this line
-
+ */ // Change code below this line
 
 /* function getExtremeElements(a) {
   // Change code below this line
@@ -24,6 +22,7 @@ const lastElement = asd[lastElementIndex];
   // Change code above this line
 
 }
+
 console.log(getExtremeElements([1, 2, 3, 4, 5]));
  */
 /* function calculateEngravingPrice(message,delimeter, pricePerWord) {
@@ -47,46 +46,47 @@ console.log(opium);
 const test = arguasd.split(" ").length * 2;
 console.log(test); */
 
-
-
 function slugify(title) {
   // Change code below this line
-   const to = title.toLowerCase();
-                                           /* ПОЧЕМУ!? */
-   /* const endr = title.join("-"); */
-return title.split(" ").join("-").toLowerCase();
+  const to = title.toLowerCase();
+  /* ПОЧЕМУ!? */
+  /* const endr = title.join("-"); */
+  return title.split(' ').join('-').toLowerCase();
   // Change code above this line
 }
 /* console.log(slugify("Arrays for begginers"));
  */
 
 function calculateTotal(number) {
- // Change code below this line
-  let result = 0 ;
-for (let i = 0; i <= number; i += 1) { // Change this line
-  result += i;
-}
+  // Change code below this line
+  let result = 0;
+  for (let i = 0; i <= number; i += 1) {
+    // Change this line
+    result += i;
+  }
 
-     return result;
-
-  // Change code above this line
-}
+  return result;
 
   // Change code above this line
+}
+
+// Change code above this line
 
 /* console.log(calculateTotal(3)); */
 const fruits = ['apple', 'plum', 'pear', 'orange'];
 
-for (let i = 0; i < fruits.length ; i++) { // Change this line
+for (let i = 0; i < fruits.length; i++) {
+  // Change this line
   const fruit = fruits[i]; // Change this line
-/*   console.log(fruit);
- */}
+  /*   console.log(fruit);
+   */
+}
 
- function calculateTotalPrice(order) {
-    let total = 0;
-    for (let i = 0; i < order.length; i++) {
-      total += order[i];        
-    }
+function calculateTotalPrice(order) {
+  let total = 0;
+  for (let i = 0; i < order.length; i++) {
+    total += order[i];
+  }
   // Change code below this line
 
   // Change code above this line
@@ -96,30 +96,28 @@ for (let i = 0; i < fruits.length ; i++) { // Change this line
 
 function findLongestWord(string) {
   // Change code below this line
-   let longestWorld = "";
-   const newstring = string.split (" ");
-   for (let i = 0; i < newstring.length; i += 1) {
-      if (newstring[i].length > longestWorld.length) {
-         longestWorld = newstring[i];
+  let longestWorld = '';
+  const newstring = string.split(' ');
+  for (let i = 0; i < newstring.length; i += 1) {
+    if (newstring[i].length > longestWorld.length) {
+      longestWorld = newstring[i];
     }
-}
-      
-   
-   return longestWorld;
+  }
+
+  return longestWorld;
 
   // Change code above this line
 }
-const a = "asdasdasd asdasda sasdasd"
+/* const a = 'asdasdasd asdasda sasdasd'; */
 /* console.log(a.split(" ").length);
- *//* console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); */
+ */ /* console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); */
 
-
- function createArrayOfNumbers(min, max) {
+function createArrayOfNumbers(min, max) {
   const numbers = [];
   // Change code below this line
-for (let i = min; i <= max; i++) {
-numbers.push(i)
-}
+  for (let i = min; i <= max; i++) {
+    numbers.push(i);
+  }
   // Change code above this line
   return numbers;
 }
@@ -127,53 +125,47 @@ numbers.push(i)
 /* console.log(createArrayOfNumbers(1, 3));
  */
 function filterArray(numbers, value) {
-   // Change code below this line
-let result = [];
-  for (i = 0; i <= numbers.length; i++ ) {
- if (numbers[i] > value) {
- result.push(numbers[i]);
- }
+  // Change code below this line
+  let result = [];
+  for (i = 0; i <= numbers.length; i++) {
+    if (numbers[i] > value) {
+      result.push(numbers[i]);
+    }
   }
-return result;
+  return result;
   // Change code above this line
 }
 
 function getCommonElements(array1, array2) {
   // Change code below this line
-let result = [];
-   for (let i = 0; i <= array1.length; i++) {
-      if (array2.includes(array1[i])) {
-   
-         result.push(array1[i])
+  let result = [];
+  for (let i = 0; i <= array1.length; i++) {
+    if (array2.includes(array1[i])) {
+      result.push(array1[i]);
+    }
+  }
+
+  return result;
+  // Change code above this line
 }
-
-   }
-
-return result;
- // Change code above this line
-}
-
 
 function calculateTotalPrice(order) {
- total = 0;
+  total = 0;
   // Change code below this line
 
   for (const i of order) {
-  total += i;
+    total += i;
   }
 
   // Change code above this line
   return total;
 }
 
-
 function filterArray(numbers, value) {
   // Change code below this line
   const filteredNumbers = [];
 
   for (const number of numbers) {
-   
-
     if (number > value) {
       filteredNumbers.push(number);
     }
@@ -183,36 +175,31 @@ function filterArray(numbers, value) {
   // Change code above this line
 }
 
-
-
 function getEvenNumbers(start, end) {
-   // Change code below this line
-let result = [];
-for (let i = start; i <= end; i++ ) {
-if (i % 2 === 0) {
-result.push[i]
-}
-}
-return result
-    // Change code above this line
+  // Change code below this line
+  let result = [];
+  for (let i = start; i <= end; i++) {
+    if (i % 2 === 0) {
+      result.push[i];
+    }
+  }
+  return result;
+  // Change code above this line
 }
 /*   console.log(getEvenNumbers(6, 12));
  */
 
-
 function includes(array, value) {
   // Change code below this line
-for (let i = 0; i < array.length; i++) {
-	if (array[i] === value) { 
- return array = true
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return (array = true);
     }
-
-   }
-return false// Change code above this line
+  }
+  return false; // Change code above this line
 }
 /* console.log(includes([1, 2, 3, 4, 5], 3));
  */
-
 
 /* const input = prompt("plese enter word");
 if (input === "" || input === null || input.trim() === "") {
@@ -288,4 +275,3 @@ else {
 /* alert((pricNum / 100 * procNum) + pricNum); */
 
 /* if (priceProc < 100 && priceProc >= 0 && ) */
-
